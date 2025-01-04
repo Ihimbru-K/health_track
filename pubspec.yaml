@@ -41,6 +41,7 @@ dependencies:
   http: ^1.2.2
   hive: ^2.2.3
   flutter_screenutil: ^5.9.3
+  animated_text_kit: ^4.2.2
 
 dev_dependencies:
   flutter_test:
