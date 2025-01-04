@@ -43,14 +43,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> with SingleTickerPr
                 _buildPage(
                   title: "Welcome to WellSpace",
                   description: "Start your journey to better mental health.",
-                  image: "assets/images/journal.png",
+                  image: "lib/assets/images/img.png",
                   animationDelay: Duration(milliseconds: 200),
                 ),
                 _buildPage(
                   title: "Track Your Progress",
                   description: "Visualize your health metrics and journal entries.",
-                  image: "assets/images/metrics.png",
-                  animationDelay: Duration(milliseconds: 400),
+                  image: "lib/assets/images/health.png",
+                  animationDelay: const Duration(milliseconds: 400),
                 ),
                 _buildMotivationalPage(),
               ],
@@ -116,7 +116,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> with SingleTickerPr
               TypewriterAnimatedText(
                 motivationalMessage,
                 textStyle: TextStyle(fontSize: 18.sp),
-                speed: Duration(milliseconds: 100),
+                speed: const Duration(milliseconds: 100),
               ),
             ],
             isRepeatingAnimation: false,

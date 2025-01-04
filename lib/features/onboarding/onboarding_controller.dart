@@ -7,8 +7,9 @@ class OnboardingController {
     try {
       return await _apiService.fetchMotivationalMessage();
     } catch (e) {
-      return "You're doing great! Keep it up!";
-     // return "Stay positive and keep going!";
+
+     return "Stay positive and keep going..!";
+     //return "You're doing great! Keep it up!";
     }
   }
 }
