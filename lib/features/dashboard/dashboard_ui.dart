@@ -13,9 +13,17 @@ class DashboardScreen extends StatefulWidget {
 }
 
 class _DashboardScreenState extends State<DashboardScreen> {
+
+ /// we will want to use the database so we create an instance
   final DatabaseHelper _dbHelper = DatabaseHelper();
+
+  ///api service class simulates the fetching of motivational quotes data and health data
   final ApiService _apiService = ApiService();
+
+ ///an array to store journal items to be created
   List<JournalEntry> _entries = [];
+
+ ///stores number of times the mood is selected
   Map<String, int> _moodCounts = {};
   int _totalEntries = 0;
   String _motivationalMessage = "";
@@ -27,6 +35,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     _loadData();
   }
 
+  /// fetches data from the database and mockApis
   Future<void> _loadData() async {
     final message = await _apiService.fetchMotivationalMessage();
     final wearableData = await _apiService.fetchWearableData();
@@ -41,6 +50,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     });
   }
 
+  ///computes the most selected mood
   void _calculateMoodCounts() {
     final counts = <String, int>{};
     for (var entry in _entries) {
@@ -104,6 +114,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
     );
   }
 
+  /// custom widget to display stats such as frequent mood and total journal entries
+
   Widget _buildStatCard(String label, String value, Color color) {
     return Expanded(
       child: Container(
@@ -137,6 +149,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     );
   }
 
+  /// widget to display the step count fetched from the mock api service
   Widget _buildStepsCounter() {
     return Container(
       padding: EdgeInsets.all(16.w),
@@ -146,7 +159,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
         boxShadow: [
           BoxShadow(
             color: Colors.grey.shade300,
-            offset: Offset(0, 2),
+            offset: const Offset(0, 2),
             blurRadius: 4,
           ),
         ],
@@ -168,6 +181,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     );
   }
 
+  ///graph of mood trends for each journal
   Widget _buildMoodTrendsGraph() {
     final spots = _entries.asMap().entries.map((entry) {
       return FlSpot(entry.key.toDouble(), _mapMoodToValue(entry.value.mood));
@@ -221,6 +235,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     );
   }
 
+  /// piechart showing various proportions of emojis (moods) selected
   Widget _buildMoodDistributionChart() {
     final data = _moodCounts.entries.map((e) {
       return PieChartSectionData(
@@ -265,6 +280,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     );
   }
 
+  /// data structure that stores mood emojis
   double _mapMoodToValue(String mood) {
     switch (mood) {
       case "😊":
@@ -282,6 +298,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     }
   }
 
+  /// data structure that associates a mood (emoji) to a particular color so it can be used in the piechart
   Color _mapMoodToColor(String mood) {
     switch (mood) {
       case "😊":
