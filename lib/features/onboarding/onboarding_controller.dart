@@ -1,5 +1,7 @@
 import '../../services/api_service.dart';
 
+
+/// fetches motivational message from the dummy api service and prepares it to be used in the onboarding ui
 class OnboardingController {
   final ApiService _apiService = ApiService();
 

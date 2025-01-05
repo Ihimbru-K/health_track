@@ -1,3 +1,7 @@
+
+
+/// data structure that models journal entry items
+/// They must have a unique id, text, mood and date
 class JournalEntry {
   final int? id;
   final String text;

@@ -28,6 +28,7 @@ class _JournalingScreenState extends State<JournalingScreen> {
     _loadData();
   }
 
+  ///fetching data from mock apis
   Future<void> _loadData() async {
     final message = await _apiService.fetchMotivationalMessage();
     final wearableData = await _apiService.fetchWearableData();
@@ -38,6 +39,7 @@ class _JournalingScreenState extends State<JournalingScreen> {
     });
   }
 
+  ///fetching journal data from sqlite db
   Future<void> _fetchEntries() async {
     final entries = await _dbHelper.getEntries();
     setState(() {
@@ -99,6 +101,8 @@ class _JournalingScreenState extends State<JournalingScreen> {
     );
   }
 
+
+  ///widget for dispalying motivational msg gotten from dumm api
   Widget _buildMotivationalMessage() {
     return Container(
       padding: EdgeInsets.all(16.w),
@@ -164,6 +168,7 @@ class _JournalingScreenState extends State<JournalingScreen> {
     );
   }
 
+  ///form for journal text
   Widget _buildJournalInput() {
     return Container(
       decoration: BoxDecoration(
@@ -191,6 +196,7 @@ class _JournalingScreenState extends State<JournalingScreen> {
     );
   }
 
+  ///widget to select emoji
   Widget _buildMoodSelectorAndSaveButton() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,

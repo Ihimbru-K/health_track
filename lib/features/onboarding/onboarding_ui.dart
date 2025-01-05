@@ -204,11 +204,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> with SingleTickerPr
 
 
 
-// import 'package:flutter/material.dart';
-// import 'package:flutter_screenutil/flutter_screenutil.dart';
-// import 'package:animated_text_kit/animated_text_kit.dart';
-// import '../../core/constants.dart';
-// //import '../journaling/journaling_screen.dart';
 
 
 

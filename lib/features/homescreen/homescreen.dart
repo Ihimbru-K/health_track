@@ -5,6 +5,7 @@ import '../journaling/journaling_ui.dart';
 
 
 
+/// Used to navigate between the journal and dashboard uis
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -16,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final List<Widget> _screens = [
     JournalingScreen(),
-    DashboardScreen(), // Add the DashboardScreen here
+    DashboardScreen(),
   ];
 
   void _onItemTapped(int index) {
