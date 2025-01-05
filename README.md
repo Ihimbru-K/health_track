@@ -89,7 +89,7 @@ The project is organized as follows:
 - **assets/**: Contains images, icons, and other static resources.
 - **test/**: Unit and widget tests for the application.
 
-## Dependencies
+## Dependencies.
 
 The application utilizes several Flutter packages:
 
