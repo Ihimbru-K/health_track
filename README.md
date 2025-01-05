@@ -34,9 +34,8 @@ Install dependencies:
    
     flutter pub get
 Run the application:
-bash
 
-Copy
+
     flutter run
 
 
@@ -46,8 +45,8 @@ Copy
 ## Onboarding
 
 Upon launching Health Track for the first time, users are greeted with an interactive onboarding experience that highlights the app's core features and benefits.
+![image](https://github.com/user-attachments/assets/2a60488e-8353-4dc6-b767-72a7df9a9671)
 
-*Screenshot Placeholder*
 
 Description: The onboarding screens guiding users through the app's functionalities.
 
@@ -55,7 +54,8 @@ Description: The onboarding screens guiding users through the app's functionalit
 
 The app incorporates smooth animations to enhance user engagement and provide a fluid navigation experience.
 
-*Screenshot Placeholder*
+![image](https://github.com/user-attachments/assets/7e6fba07-e5ba-4493-b2bf-c1fc9bc04cb5)
+
 
 Description: Example of in-app animations enhancing user interaction.
 
@@ -63,7 +63,8 @@ Description: Example of in-app animations enhancing user interaction.
 
 Users can record their daily moods by selecting from a range of emoticons and adding personal notes, promoting regular self-reflection.
 
-*Screenshot Placeholder*
+![image](https://github.com/user-attachments/assets/01f8eb7b-88a6-4fd8-92d6-9eaaa40a92f1)
+
 
 Description: The mood journaling interface where users log their emotions and thoughts.
 
@@ -71,7 +72,8 @@ Description: The mood journaling interface where users log their emotions and th
 
 The dashboard provides a comprehensive overview of the user's health data, including mood trends, activity levels, and personalized insights.
 
-*Screenshot Placeholder*
+![image](https://github.com/user-attachments/assets/cfc11fa9-86b5-4cb8-a81a-4bd051268b25)
+
 
 Description: The main dashboard displaying key health statistics and trends.
 
@@ -107,6 +109,4 @@ We welcome contributions! To get started:
 4. Push to the branch: `git push origin feature-branch-name`.
 5. Submit a pull request detailing your changes.
 
-## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
