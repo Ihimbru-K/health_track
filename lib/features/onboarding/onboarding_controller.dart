@@ -9,7 +9,7 @@ class OnboardingController {
     } catch (e) {
 
      return "Stay positive and keep going..!";
-     //return "You're doing great! Keep it up!";
+
     }
   }
 }

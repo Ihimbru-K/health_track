@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import '../journaling/journaling_ui.dart';
 import 'onboarding_controller.dart';
 //import '../journaling/journaling_screen.dart';
 
@@ -57,7 +58,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> with SingleTickerPr
             ),
           ),
           _buildPageIndicator(),
-          _buildStartButton(),
+          //_buildStartButton(),
         ],
       ),
     );
@@ -124,10 +125,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> with SingleTickerPr
           SizedBox(height: 40.h),
           ElevatedButton(
             onPressed: () {
-              // Navigator.pushReplacement(
-              //   context,
-              //   MaterialPageRoute(builder: (_) => JournalingScreen()),
-              // );
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (_) => JournalingScreen()),
+              );
             },
             child: Text("Start Journaling"),
           ),
@@ -154,22 +155,22 @@ class _OnboardingScreenState extends State<OnboardingScreen> with SingleTickerPr
     );
   }
 
-  Widget _buildStartButton() {
-    return Padding(
-      padding: EdgeInsets.symmetric(vertical: 20.h),
-      child: ElevatedButton(
-        onPressed: _currentPage == 2
-            ? () {
-          // Navigator.pushReplacement(
-          //   context,
-          //   MaterialPageRoute(builder: (_) => JournalingScreen()),
-          // );
-        }
-            : null,
-        child: Text("Start Journaling"),
-      ),
-    );
-  }
+  // Widget _buildStartButton() {
+  //   return Padding(
+  //     padding: EdgeInsets.symmetric(vertical: 20.h),
+  //     child: ElevatedButton(
+  //       onPressed: _currentPage == 2
+  //           ? () {
+  //         // Navigator.pushReplacement(
+  //         //   context,
+  //         //   MaterialPageRoute(builder: (_) => JournalingScreen()),
+  //         // );
+  //       }
+  //           : null,
+  //       child: Text("Start Journaling"),
+  //     ),
+  //   );
+  // }
 }
 
 

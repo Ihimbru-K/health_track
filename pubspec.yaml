@@ -22,6 +22,8 @@ dependencies:
   hive: ^2.2.3
   flutter_screenutil: ^5.9.3
   animated_text_kit: ^4.2.2
+  build_runner: ^2.4.9
+  path: ^1.9.0
 
 dev_dependencies:
   flutter_test:
