@@ -55,9 +55,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text(
           "Dashboard",
-          style: TextStyle(fontSize: 22.sp, fontWeight: FontWeight.bold),
+          style: TextStyle(fontSize: 22.sp, fontWeight: FontWeight.bold, color: Colors.white),
         ),
         backgroundColor: Colors.green.shade700,
       ),
@@ -180,7 +181,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
         boxShadow: [
           BoxShadow(
             color: Colors.grey.shade300,
-            offset: Offset(0, 2),
+            offset: const Offset(0, 2),
             blurRadius: 4,
           ),
         ],
@@ -199,15 +200,17 @@ class _DashboardScreenState extends State<DashboardScreen> {
               LineChartData(
                 borderData: FlBorderData(show: true),
                 titlesData: FlTitlesData(show: true),
-                gridData: FlGridData(show: true),
+                gridData: FlGridData(show: false),
                 lineBarsData: [
                   LineChartBarData(
+
                     spots: spots,
                     isCurved: true,
                     color: Colors.green,
                     barWidth: 4,
                     isStrokeCapRound: true,
                     belowBarData: BarAreaData(show: false),
+
                   ),
                 ],
               ),
