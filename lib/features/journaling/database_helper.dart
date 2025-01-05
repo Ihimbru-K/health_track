@@ -18,7 +18,7 @@ class DatabaseHelper {
     return _database!;
   }
 
-  //creates unique id, inputed text, mood and date data table for storing journal items
+  ///creates unique id, inputed text, mood and date data table for storing journal items
   Future<Database> _initDatabase() async {
     final dbPath = await getDatabasesPath();
     return openDatabase(
