@@ -69,6 +69,8 @@ Description: Example of in-app animations enhancing user interaction.
 
 Users can record their daily moods by selecting from a range of emoticons and adding personal notes, promoting regular self-reflection.
 ![image](https://github.com/user-attachments/assets/e70ae15f-2a23-4f49-8900-54c2aec1dcb8)
+![image](https://github.com/user-attachments/assets/00138e1f-d208-4a4a-ba19-22dd6709cda3)
+
 
 
 ##fetched journal items from sqlite database
@@ -121,7 +123,7 @@ The application utilizes several Flutter packages:
 
 ## Contributing
 
-
+```dart
  ///creates unique id, inputed text, mood and date data table for storing journal items
   Future<Database> _initDatabase() async {
     final dbPath = await getDatabasesPath();
@@ -140,7 +142,7 @@ The application utilizes several Flutter packages:
       version: 1,
     );
   }
-
+```
 
 We welcome contributions! To get started:
 
