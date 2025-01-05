@@ -57,13 +57,25 @@ The app incorporates smooth animations to enhance user engagement and provide a 
 ![image](https://github.com/user-attachments/assets/7e6fba07-e5ba-4493-b2bf-c1fc9bc04cb5)
 
 
+animation
+
+![image](https://github.com/user-attachments/assets/487fcbdc-d943-4f1f-84c1-9e5430c77a3f)
+
+
+
 Description: Example of in-app animations enhancing user interaction.
 
 ## Mood Journaling
 
 Users can record their daily moods by selecting from a range of emoticons and adding personal notes, promoting regular self-reflection.
+![image](https://github.com/user-attachments/assets/e70ae15f-2a23-4f49-8900-54c2aec1dcb8)
 
-![image](https://github.com/user-attachments/assets/01f8eb7b-88a6-4fd8-92d6-9eaaa40a92f1)
+
+##fetched journal items from sqlite database
+![image](https://github.com/user-attachments/assets/a26174dc-9516-4a58-aa35-15f984265ae6)
+
+
+
 
 
 Description: The mood journaling interface where users log their emotions and thoughts.
@@ -108,6 +120,27 @@ The application utilizes several Flutter packages:
 - **animations**: To implement smooth and customizable animations.
 
 ## Contributing
+
+
+ ///creates unique id, inputed text, mood and date data table for storing journal items
+  Future<Database> _initDatabase() async {
+    final dbPath = await getDatabasesPath();
+    return openDatabase(
+      join(dbPath, 'journal.db'),
+      onCreate: (db, version) async {
+        await db.execute('''
+          CREATE TABLE journal_entries (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            text TEXT,
+            mood TEXT,
+            date TEXT
+          )
+        ''');
+      },
+      version: 1,
+    );
+  }
+
 
 We welcome contributions! To get started:
 
