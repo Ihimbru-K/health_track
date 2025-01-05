@@ -76,6 +76,13 @@ The dashboard provides a comprehensive overview of the user's health data, inclu
 
 
 
+
+piechart and graph
+![image](https://github.com/user-attachments/assets/396674b8-2332-47ab-a0a4-bbee6f470769)
+
+
+
+
 Description: The main dashboard displaying key health statistics and trends.
 
 ## Project Structure
