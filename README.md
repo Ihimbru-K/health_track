@@ -72,7 +72,8 @@ Description: The mood journaling interface where users log their emotions and th
 
 The dashboard provides a comprehensive overview of the user's health data, including mood trends, activity levels, and personalized insights.
 
-![image](https://github.com/user-attachments/assets/cfc11fa9-86b5-4cb8-a81a-4bd051268b25)
+![dashboard](https://github.com/user-attachments/assets/f79c3bd9-d641-4dec-9b30-ed30855d4876)
+
 
 
 Description: The main dashboard displaying key health statistics and trends.
