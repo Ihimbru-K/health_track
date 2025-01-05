@@ -68,8 +68,18 @@ Description: Example of in-app animations enhancing user interaction.
 ## Mood Journaling
 
 Users can record their daily moods by selecting from a range of emoticons and adding personal notes, promoting regular self-reflection.
-![image](https://github.com/user-attachments/assets/e70ae15f-2a23-4f49-8900-54c2aec1dcb8)
-![image](https://github.com/user-attachments/assets/00138e1f-d208-4a4a-ba19-22dd6709cda3)
+![image](https://github.com/user-attachments/assets/00b81a7c-247f-4747-b750-64cadb582d6f)
+
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/c9ed1e9e-63d9-42a1-9bbc-d1f408654e92)
+
+
+
+
 
 
 
