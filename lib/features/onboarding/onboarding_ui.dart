@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:health_track/main.dart';
+import '../homescreen/homescreen.dart';
 import '../journaling/journaling_ui.dart';
 import 'onboarding_controller.dart';
 //import '../journaling/journaling_screen.dart';
@@ -127,7 +129,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> with SingleTickerPr
             onPressed: () {
               Navigator.pushReplacement(
                 context,
-                MaterialPageRoute(builder: (_) => JournalingScreen()),
+                MaterialPageRoute(builder: (_) => HomeScreen()
+
+                   // JournalingScreen()
+
+
+
+
+                ),
               );
             },
             child: Text("Start Journaling"),
