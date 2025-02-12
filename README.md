@@ -63,7 +63,7 @@ animation
 
 
 
-Description: Example of in-app animations enhancing user interaction.
+Description: Example of in-app animations enhancing user interaction
 
 ## Mood Journaling
 
