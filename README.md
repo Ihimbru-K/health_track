@@ -1,4 +1,4 @@
-# Health Track.
+# Health Track
 
 Health Track is a comprehensive Flutter-based mobile application designed to assist users in monitoring their daily health metrics and emotional well-being. The app offers features such as mood journaling, activity tracking, and insightful dashboards to provide a holistic view of the user's health journey
 
